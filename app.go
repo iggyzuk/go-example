@@ -14,6 +14,7 @@ var resources embed.FS
 var t = template.Must(template.ParseFS(resources, "templates/*"))
 
 func main() {
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
